@@ -26,7 +26,7 @@ int main()
     int *p = b;//p指向一个整形数据
     int numsize,targrt=9; //target number
     numsize = sizeof(a)/sizeof(a[0]);//length of array
-    p = twoSum(a,numsize,targrt); //把结果存到b里面 借由指针a
+    p = twoSum(a,numsize,targrt); //把结果存到指针p
     cout<<*p<<" "<<*(p+1)<<endl;
 }
 
