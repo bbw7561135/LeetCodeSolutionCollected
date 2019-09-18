@@ -16,7 +16,7 @@ int* twoSum(int* nums, int numsSize, int target) {//返回的是指针 指向整
             }
         }
     }
-    return a;//返回数组a的信息实际上存到b里面
+    return a;//返回指针a的信息实际上存到b里面
 }
 
 int main()
