@@ -22,12 +22,18 @@ int* twoSum(int* nums, int numsSize, int target) {//返回的是指针 指向整
 int main()
 {
     int a[4] = {2,7,11,15}; //input array
-    int b[2];
+    int b[2] = {6,7};
     int *p = b;//p指向一个整形数据
+    cout<<*p<<" "<<*(p+1)<<endl;//test of point
     int numsize,targrt=9; //target number
     numsize = sizeof(a)/sizeof(a[0]);//length of array
     p = twoSum(a,numsize,targrt); //把结果存到指针p
-    cout<<*p<<" "<<*(p+1)<<endl;
+    cout<<*p<<" "<<*(p+1)<<endl;//point to a
+    cout<<b[0]<<" "<<b[1]<<endl;//b is still b
 }
 
-//output 0 1
+//output 
+//6 7
+//0 1
+//6 7
+
