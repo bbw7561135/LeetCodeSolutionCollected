@@ -36,6 +36,7 @@ void QuickSort(int* arr, int low, int high) //use as a black box
         int base = Partition(arr, low, high); //快速排序本质是以base位置为准分为左右两边
         //左边小于base 右边大于base 用partition实现 然后递归调用直到只剩一个数
         //一轮后 形成以base所在位置为基准的左右两边 左边都小于arr[base] 右边都大于arr[base] 递归调用
+        //手写个例子 就明白partition的过程
         QuickSort(arr, low, base - 1);
         QuickSort(arr, base + 1, high);
     }
