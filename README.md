@@ -50,3 +50,16 @@
 #### Assume we are dealing with an environment which could only store <br>
 #### integers within the 32-bit signed integer range: [−231,  231 − 1]. 
 #### For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.
+
+<br>
+<br>
+
+#### Q11：Given n non-negative integers a1, a2, …, an, where each represents a point at coordinate (i, ai). <br>
+#### n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). <br>
+#### Find two lines, which together with x-axis forms a container, such that the container contains the most water. <br>
+#### Note: You may not slant the container and n is at least 2. <br>
+#### 给定 n 个非负整数 a1，a2，...，an，每个数代表坐标中的一个点 (i, ai)<br>
+#### 在坐标内画 n 条垂直线，垂直线 i 的两个端点分别为 (i, ai) 和 (i, 0)<br>
+#### 找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水<br>
+#### 输入: [1,8,6,2,5,4,8,3,7] 输出: 49
+
