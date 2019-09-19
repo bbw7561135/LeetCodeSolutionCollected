@@ -16,7 +16,7 @@ subroutine maxArea(arr,arr_size,area)
     i=1
     j=arr_size
     do while(i<j)
-        area = max(area,min(arr(i),arr(j))*(j-i))
+        area = max(area,min(arr(i),arr(j))*(j-i)) !算法注释在python和C++版代码中
         if(arr(i)<arr(j))then
             i=i+1
         else
