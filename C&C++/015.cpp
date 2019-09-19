@@ -17,14 +17,14 @@ int Partition(int arr[], int low, int high) //part of quick sort
     {
         while(low < high && arr[high] >= base)
         {
-            high --;
+            high --; //右侧比base大 通过 high-- 往中间移动一位
         }
-        Swap(arr, low, high);
+        Swap(arr, low, high); //若右侧比base小 交换位置 
         while(low < high && arr[low] <= base)
         {
-            low ++;
+            low ++; //左侧比base小 正常 通过
         }
-        Swap(arr, low, high);
+        Swap(arr, low, high);//左侧比base大 交换位置
     }
     return low;
 }
@@ -33,7 +33,9 @@ void QuickSort(int* arr, int low, int high) //use as a black box
 {
     if(low < high)
     {
-        int base = Partition(arr, low, high);
+        int base = Partition(arr, low, high); //快速排序本质是以base位置为准分为左右两边
+        //左边小于base 右边大于base 用partition实现 然后递归调用直到只剩一个数
+        //一轮后 形成以base所在位置为基准的左右两边 左边都小于arr[base] 右边都大于arr[base] 递归调用
         QuickSort(arr, low, base - 1);
         QuickSort(arr, base + 1, high);
     }
