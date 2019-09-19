@@ -12,13 +12,13 @@ using namespace std;
 int maxArea(int* nums, int numsSize) {
     int maxa = 0;
     int i=0,j=0;
-    j=numsSize-1;!最右边
+    j=numsSize-1;//最右边
     while(i<j)
     {
-        maxa = max(maxa,min(nums[i],nums[j])*(j-i)); !找出最左边和最右边组成容器的容积
-        if(nums[i]<nums[j]) !短边不需要再考虑 因为此时只要选定短边 其他任选边的容积都不会大于maxval
+        maxa = max(maxa,min(nums[i],nums[j])*(j-i)); //找出最左边和最右边组成容器的容积
+        if(nums[i]<nums[j]) //短边不需要再考虑 因为此时只要选定短边 其他任选边的容积都不会大于maxval
             i=i+1;
-        else          !短边不用考虑 考虑下一块木板 往中间移动
+        else          //短边不用考虑 考虑下一块木板 往中间移动
             j=j-1;
     }
     return maxa;
