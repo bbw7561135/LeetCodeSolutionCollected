@@ -66,9 +66,9 @@ void ThreeSum (int* arr, int arrSize)
             if(sumof3==0)
             {
                 cout << "answer is" << arr[i] <<'\t' << arr[j] << '\t' << arr[k] << endl;
-                if(arr[j]==arr[j+1])
+                if(j<k && arr[j]==arr[j+1]) //j<k最好放着 以防j和k相邻的情况
                     j=j+1; //跳过重复答案
-                if(arr[k]==arr[k-1])
+                if(j<k && arr[k]==arr[k-1])
                     k=k-1; //跳过重复答案
 
                 j=j+1; //开始找下个解
