@@ -79,9 +79,9 @@ int main()
     int target = 1;
     int closest_res = 99;
     arrSize = sizeof(arr)/sizeof(arr[0]);
-    QuickSort(arr,0,arrSize); //sort first then find the answer
+    QuickSort(arr,0,arrSize-1); //sort first then find the answer
     //for(int i=0;i<arrSize;i++)
-        //cout<<arr[i]<<endl;
+        //cout<<arr[i]<<endl;//the index in QuciSort should be 0 and arrSize-1
     closest_res = ThreeSumClosest(arr,arrSize,target);
     cout << closest_res << endl;
     return 0;
