@@ -5,9 +5,9 @@ class Solution039(object):
         :type target: int
         :rtype: List[List[int]]
         """
-        candidates.sort()
+        candidates.sort() #先排序
         #储存结果
-        Solution039.anslist = []
+        Solution039.anslist = [] #类变量 所有实例共有
         self.DFS(candidates, target, 0, [])
         return Solution039.anslist
  
