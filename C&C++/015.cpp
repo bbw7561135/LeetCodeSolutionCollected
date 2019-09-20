@@ -92,9 +92,9 @@ int main()
     int arr[6] = {-1, 0, 1, 2, -1, -4};
     int arrSize = 0;
     arrSize = sizeof(arr)/sizeof(arr[0]);
-    QuickSort(arr,0,arrSize); //sort first then find the answer
+    QuickSort(arr,0,arrSize-1); //sort first then find the answer
     for(int i=0;i<arrSize;i++)
-        cout<<arr[i]<<endl;
+        cout<<arr[i]<<endl;//the index in QuciSort should be 0 and arrSize-1
     ThreeSum(arr,arrSize);
     return 0;
 
