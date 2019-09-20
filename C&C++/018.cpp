@@ -30,7 +30,7 @@ int Partition(int arr[], int low, int high) //part of quick sort
 }
 
 void QuickSort(int* arr, int low, int high) //use as a black box
-{
+{                    //int* arr = int arr []
     if(low < high)
     {
         int base = Partition(arr, low, high);
