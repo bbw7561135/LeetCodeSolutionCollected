@@ -7,7 +7,7 @@ class Solution018(object):
         """
         result = list()
         nums_len = len(nums)
-        nums.sort()
+        nums.sort() #i只需搜索到倒数第四个 剩下就3个没有必要了 因为是四数之和 同理j只到倒数第三个
         for i in range(nums_len - 3): #之前双指针法的拓展 之前固定一个i 这里固定i和j
             if i > 0 and nums[i - 1] == nums[i]: #雷同i 已经找过
                 continue
