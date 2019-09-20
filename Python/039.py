@@ -30,3 +30,4 @@ nums039=[2,3,5]
 target=8
 test039.combinationSum(nums039,target)
 #output [[2, 2, 2, 2], [2, 3, 3], [3, 5]]
+#用C++得用到复杂的数据结构 还是用Python方便
